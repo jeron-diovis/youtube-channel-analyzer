@@ -1,0 +1,24 @@
+<table border="1px">
+	<tbody>
+		<tr>
+			<td>Channel Name</td>
+			<td><%= model.name %></td>
+		</tr>
+		<tr>
+			<td>Channel Address</td>
+			<td><a href="<%= model.address %>"><%= model.address %></a></td>
+		</tr>
+		<tr>
+			<td>Movies Count</td>
+			<td><%= model.statistics.videoCount %></td>
+		</tr>
+		<tr>
+			<td>Views Count</td>
+			<td><%= model.statistics.viewCount %></td>
+		</tr>
+		<tr>
+			<td>Subscribers Count</td>
+			<td><%= model.statistics.subscriberCount %></td>
+		</tr>
+	</tbody>
+</table>

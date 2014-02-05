@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube channels analyzer</title>
+	<link rel="stylesheet" href="assets/css/backgrid.css"/>
+	<link rel="stylesheet" href="assets/css/backgrid-paginator.css"/>
+	<link rel="stylesheet" href="assets/css/backgrid-filter.css"/>
+	<link rel="stylesheet" href="assets/css/index.css"/>
+</head>
+	<body>
+		<div id="youtube-analyzer">
+			<form id="frm-analyzer" action="">
+				<div>
+					<input type="text" name="channelLink" id="channel-link"
+							placeholder="Enter link to channel here"
+							value="http://www.youtube.com/user/DiscoveryNetworks"
+							size="50"
+					/>
+				</div>
+
+				<div id="channel-link-error" class="error"></div>
+
+				<br>
+				<div>
+					<input id="btn-submit" type="submit" value="Analyze" style="display:none"/>
+				</div>
+				<div id="loader">
+					<img src="assets/img/ajax-loader.gif" alt=""/>
+				</div>
+			</form>
+
+			<div id="channel-info-container">
+				<h2>Channel statistics</h2>
+				<div id="channel-stats"></div>
+
+				<h2>Channel movies</h2>
+				<div id="channel-movies"></div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" data-main="assets/main.js" src="assets/core/libs/require.js"></script>
+</html>
